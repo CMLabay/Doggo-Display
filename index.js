@@ -5,7 +5,6 @@ let numImage = 0;
 
 //retrieve the images
 function getImages(numImage){
-    console.log('inside getImages. numImage ='+ numImage);
     for(let i = 0; i < numImage; i++){
         fetch('https://dog.ceo/api/breeds/image/random')
             .then(response => response.json())
@@ -17,6 +16,7 @@ function getImages(numImage){
 
 //display the images 
 function displayImages(responseJson){
+    console.log(responseJson.message);
     const newImg = `<img class="js-image-result" src="${responseJson.message}">`
     $('.image-display').append(newImg);
 }
