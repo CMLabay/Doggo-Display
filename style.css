@@ -1,1 +1,14 @@
-THIS IS HTE CSS
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  fieldset{
+      border:none;
+      text-align:center;
+  }
+.image-display{
+    text-align:center;
+}
