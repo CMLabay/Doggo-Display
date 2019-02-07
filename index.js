@@ -17,7 +17,7 @@ function getImages(numImage){
 
 //display the images 
 function displayImages(responseJson){
-    const newImg = `<img src="${responseJson.message}">`
+    const newImg = `<img class="js-image-result" src="${responseJson.message}">`
     $('.image-display').append(newImg);
 }
 
